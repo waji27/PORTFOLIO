@@ -1,8 +1,9 @@
 /* Fonts */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font:
+    "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway", sans-serif;
   --nav-font: "Poppins", sans-serif;
 }
@@ -563,10 +564,14 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
+  background-color: #040b143e;
+  padding: 1em;
+  border-radius: 2%;
+  margin-top: 15em;
 }
 
 .hero h2 {
-  margin: 0;
+  margin: 10 0;
   font-size: 64px;
   font-weight: 700;
 }
@@ -1270,4 +1275,24 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/* whatsapp icon css  */
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 65px;
+  right: 10px;
+  background-color: #25d366;
+  color: white;
+  font-size: 30px;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
 }
