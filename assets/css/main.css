@@ -419,7 +419,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #25d366;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -1281,16 +1281,20 @@ section,
 
 .whatsapp-btn {
   position: fixed;
-  bottom: 65px;
-  right: 10px;
   background-color: #25d366;
   color: white;
   font-size: 30px;
-  padding: 15px;
   border-radius: 50%;
-  text-align: center;
+  /* text-align: center; */
   z-index: 1000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: 50px;
+  width: 50px;
+  bottom: 65px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .whatsapp-btn:hover {
