@@ -1285,7 +1285,6 @@ section,
   color: white;
   font-size: 30px;
   border-radius: 50%;
-  /* text-align: center; */
   z-index: 1000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   height: 50px;
