@@ -278,16 +278,30 @@ h6 {
 .navmenu a:focus .toggle-dropdown {
   font-size: 12px;
   line-height: 0;
-  margin-left: auto;
   width: 30px;
   height: 30px;
+  margin-left: -130px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   transition: 0.3s;
   flex-shrink: 0;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  /* background-color: color-mix(in srgb, var(--accent-color), transparent 90%); */
+}
+.navmenu a .toggle-dropdown-for-explore-more,
+.navmenu a:focus .toggle-dropdown-for-explore-more {
+  color: var(--nav-color);
+  padding: 5px 10px;
+  font-family: var(--nav-font);
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: 0.3s;
+  width: 100%;
+  cursor: pointer;
 }
 
 .navmenu a .toggle-dropdown:hover,
@@ -337,7 +351,7 @@ h6 {
   padding: 5px 10px;
   margin: 5px 10px;
   background-color: var(--nav-dropdown-background-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  /* border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%); */
   box-shadow: none;
   transition: all 0.5s ease-in-out;
 }
@@ -348,6 +362,7 @@ h6 {
 
 .navmenu .dropdown > .dropdown-active {
   display: block;
+  margin-top: -10px;
   background-color: rgba(33, 37, 41, 0.03);
 }
 
@@ -447,6 +462,10 @@ h6 {
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
+  .about {
+    margin-bottom: -60px;
+  }
+
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
@@ -616,9 +635,19 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
+.about .container p {
+  margin-bottom: -30px;
+}
+
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
+  margin-bottom: -10px;
+}
+
+.about .content p {
+  margin-bottom: 5px;
 }
 
 .about .content ul {
@@ -627,7 +656,7 @@ section,
 }
 
 .about .content ul li {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
 }
@@ -1273,7 +1302,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-
 
 /* whatsapp icon css  */
 

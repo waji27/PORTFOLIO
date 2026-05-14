@@ -46,6 +46,18 @@
   });
 
   /**
+   * Toggle mobile nav dropdowns for explore more
+   */
+  document.querySelectorAll('.navmenu .toggle-dropdown-for-explore-more').forEach(navmenu => {
+    navmenu.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.parentNode.classList.toggle('active');
+      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+      e.stopImmediatePropagation();
+    });
+  });
+
+  /**
    * Preloader
    */
   const preloader = document.querySelector('#preloader');
@@ -103,6 +115,14 @@
       backSpeed: 50,
       backDelay: 2000
     });
+    // Second Typed Text
+new Typed(".typed-services", {
+  strings: ["Graphic Designing", "Content Writing", "SEO Services"],
+  typeSpeed: 70,
+  backSpeed: 40,
+  backDelay: 1500,
+  loop: true,
+});
   }
 
   /**
